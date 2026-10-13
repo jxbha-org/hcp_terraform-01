@@ -17,7 +17,7 @@ resource "ibm_is_instance" "journey-vsi" {
   name           = "journey-vsi01"
   image          = var.system-image
   profile        = var.profile
-  tags           = ["demo", "terraform-managed"]
+  tags           = ["demo"]
 
   primary_network_interface {
     subnet          = ibm_is_subnet.journey-subnet.id
